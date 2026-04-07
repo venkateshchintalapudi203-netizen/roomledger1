@@ -12,12 +12,12 @@ public class Ui_Controller {
         String path = request.getServletPath();
 
         // Let Spring handle actual resources
-        if (path.startsWith("/assets/") ||
-            path.startsWith("/api/") ||
-            path.startsWith("/h2-console/") ||
-            path.startsWith("/swagger")) {
-            return null; // don't intercept
-        }
+//        if (path.startsWith("/assets/") ||
+//            path.startsWith("/api/") ||
+//            path.startsWith("/h2-console/") ||
+//            path.startsWith("/swagger")) {
+//            return null; // don't intercept
+//        }
 
         return "forward:/index.html";
     }
